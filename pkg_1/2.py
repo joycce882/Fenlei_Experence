@@ -84,7 +84,6 @@ nb = NaiveBayes()
 nb.fit(X_1, y_train)
 
 j = 0
-y_pre = []
 # 预测多条数据
 
 y_pred = nb.predict(X_test)
@@ -96,3 +95,5 @@ for i in range(len(y_pred)):
         j += 1
 m = X_test.shape[0]
 print("正确率为：" + str(j / m))
+
+
